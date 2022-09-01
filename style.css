@@ -1,9 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-.bars {
+#bars {
   display: flex;
+  align-items: flex-end;
   height: 100px;
 }
 
@@ -13,6 +10,4 @@
   background-color: chartreuse;
   margin-right: 1px;
   height: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
 }
