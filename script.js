@@ -20,7 +20,7 @@ function loop() {
   setTimeout(modifyArray, 1000);
 }
 
-// modifies the array by adding and removing array-objects
+// modifies the array by adding and removing array-values
 function modifyArray() {
   // runs the random number function
   const queueSize = getNumberOfCustomers();
@@ -28,7 +28,7 @@ function modifyArray() {
   // adds the random number to the end of the array
   array.push(queueSize);
 
-  // removes the first object in the array
+  // removes the first value in the array
   array.shift();
 
   // calls the loop() and displayData() function
@@ -44,7 +44,7 @@ function displayData() {
     const bar = document.querySelector(".bar");
     const bars = document.querySelector("#bars");
 
-    // sets the height of the bar to the number at the given index - determined by the iterator - and displays it in %.
+    // sets the height of the bar to the number at the given index - determined by the iterator - and displays it in %
     bar.style.height = array[i] + "%";
 
     // appends the bar with the given height as the last child to the #bars-container
